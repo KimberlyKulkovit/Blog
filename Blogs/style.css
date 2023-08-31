@@ -1,0 +1,75 @@
+/******************************************
+/* CSS
+/*******************************************/
+/*********************************************/ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+  background-color: #F6F6F6;
+  font-size: 14px;
+  width: 100%;
+}
+nav, ul{
+  width: 100%;
+  padding: 0%;
+}
+
+li { 
+  display: flex;
+  width: 100%;
+  flex-basis: 50%;
+  list-style: none;
+  text-align: center;
+  padding-top: 2%;
+  display: inline-block;
+  width: 19%;
+}
+
+.navLogo{ 
+  width: 15%;
+}
+
+section{
+  margin: 0 200px 0 200px;
+}
+
+img{
+  padding: 5% 0 5% 5%;
+  width: 100%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+a{ 
+  text-decoration-line: none;
+}
+
+body{
+  color: #747474;
+  background-color: #FBFBFB;
+  font-size: 18 px;
+  font-weight: regular;
+  line-height: 2;
+  text-indent: 20px;
+}
+
+h5{
+  padding: 5% 0 0 2%;
+}
+
+h1, h2{
+  padding: 0 0 0 2%;
+}

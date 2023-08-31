@@ -1,0 +1,139 @@
+/******************************************
+/* CSS
+/*******************************************/
+/*********************************************/ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+  background-color: #F6F6F6;
+  font-size: 14px;
+  width: 100%;
+}
+nav, ul{
+  width: 100%;
+  padding: 0%;
+}
+
+.mainNav{
+  margin: 0;
+}
+
+li { 
+  display: flex;
+  width: 100%;
+  flex-basis: 50%;
+  list-style: none;
+  text-align: center;
+  padding-top: 2%;
+  display: inline-block;
+  width: 19%;
+}
+
+.navLogo{ 
+  width: 15%;
+}
+
+.mainSection{ 
+  display: flex;
+  width: 100%;
+}
+
+.sectionOne, .sectionTwo{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  padding: 2%;
+}
+.sectionOne{
+  width: 30%;
+}
+.sectionTwo{
+    width: 70%;
+}
+
+.about{
+  margin: 10% 5% 0 5%;
+}
+
+.aboutP{
+  margin-left: 3%;
+}
+
+footer{
+  margin-top: 10%;
+}
+
+.newsletter{
+  display: flex;
+  flex-direction: row;
+}
+
+#next div {
+	overflow:hidden; /* wrap floats */
+	width:100%;	/* haslayout wraps floats IE */
+}
+
+#next label {
+	float:right;
+}
+
+#next input {
+	float:left;
+}
+.newsletter, .socialMedia {
+  margin-left: 5%;
+}
+
+.socialMedia, ul{
+  width: 100%;
+}
+
+ul{
+  margin-left: 5%;
+}
+.sm{
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  display: inline-block;
+}
+
+.newsletterAd{
+  width: 100%;
+  margin-left: 10%;
+}
+.blurb, .newsletter{
+  display:inline-block
+}
+.blurb{
+  flex-direction: column;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+a{ 
+  text-decoration-line: none;
+}
+
+body{
+  color: #747474;
+  background-color: #FBFBFB;
+  font-size: 18 px;
+  font-weight: regular;
+  line-height: 2;
+  text-indent: 20px;
+}
+
